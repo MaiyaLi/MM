@@ -1,0 +1,11 @@
+{
+    "rules": {
+        "messages": {
+            ".read": "auth != null",
+            ".write": true,
+            "$message_id": {
+                ".validate": "newData.hasChildren(['name', 'email', 'message', 'timestamp'])"
+            }
+        }
+    }
+}
